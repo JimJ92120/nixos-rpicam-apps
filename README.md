@@ -1,6 +1,6 @@
 # nixos-rpicam-apps
 
-Packaging [`raspberrypi/rpicam-apps`](https://github.com/raspberrypi/rpicam-apps) and [raspberrypi/libcamera](https://github.com/raspberrypi/libcamera) for **NixOS**.
+Packaging [`raspberrypi/rpicam-apps`](https://github.com/raspberrypi/rpicam-apps) and [`raspberrypi/libcamera`](https://github.com/raspberrypi/libcamera) for **NixOS**.
 
 ---
 
