@@ -9,15 +9,16 @@ Packaging [`raspberrypi/rpicam-apps`](https://github.com/raspberrypi/rpicam-apps
 The package is meant to run on `aarch64-linux` systems.  
 See [cross-compilation](https://nixos.wiki/wiki/Cross_Compiling).
 
+### install
+
 ```sh
-git clone <repository-name>
+git clone https://github.com/JimJ92120/nixos-rpicam-apps.git
 ```
 
----
-
-# use
+### import
 
 ```nix
+# /etc/nixos/configuration.nix
 let
   rpicam-apps = import /path/to/nixos-rpicam-apps/package.nix
 in
