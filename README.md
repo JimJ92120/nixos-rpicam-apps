@@ -20,7 +20,7 @@ git clone https://github.com/JimJ92120/nixos-rpicam-apps.git
 ```nix
 # /etc/nixos/configuration.nix
 let
-  rpicam-apps = import /path/to/nixos-rpicam-apps/package.nix
+  rpicam-apps = import /path/to/nixos-rpicam-apps/package.nix;
 in
 {
   environment.systemPackages = [
