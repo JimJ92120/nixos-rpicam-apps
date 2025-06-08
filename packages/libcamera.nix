@@ -1,8 +1,5 @@
 with import <nixpkgs> {};
 
-let 
-
-in
 pkgs.stdenv.mkDerivation {
   name = "libcamera";
 
@@ -59,5 +56,12 @@ pkgs.stdenv.mkDerivation {
 
   env = {
     NIX_CFLAGS_COMPILE = "-Wno-sign-compare -Wno-stringop-truncation";
+  };
+
+  meta = with lib; {
+    platforms = [
+      "aarch64-linux"
+      "armv7l-linux"
+    ];
   };
 }

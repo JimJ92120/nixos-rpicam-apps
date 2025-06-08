@@ -45,4 +45,11 @@ pkgs.stdenv.mkDerivation {
     BOOST_INCLUDEDIR = "${lib.getDev pkgs.boost}/include";
     BOOST_LIBRARYDIR = "${lib.getLib pkgs.boost}/lib";
   };
+
+  meta = with lib; {
+    platforms = [
+      "aarch64-linux"
+      "armv7l-linux"
+    ];
+  };
 }
