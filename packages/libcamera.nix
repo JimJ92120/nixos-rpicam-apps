@@ -45,7 +45,7 @@ pkgs.stdenv.mkDerivation {
   mesonFlags = [
     "-Dpipelines=rpi/vc4,rpi/pisp"
     "-Dipas=rpi/vc4,rpi/pisp"
-    "-Dv4l2=true -Dgstreamer=enabled"
+    "-Dv4l2=enabled -Dgstreamer=enabled"
     "-Dtest=false"
     "-Dlc-compliance=disabled"
     "-Dcam=disabled"
